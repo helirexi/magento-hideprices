@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<!--
+ *
+ * Intercastilla Hideprices Extension
+ *
+ * NOTICE OF LICENSE
+ *
+ * Copyright (c) 2014 Intercastilla Diseño y Comunicación Gráfica, S.L.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included i
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OF
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ *
+-->
+<config>
+    <sections>
+        <hideprices translate="label" module="hideprices">
+            <label>Hide prices</label>
+            <tab>catalog</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>210</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <hideprices translate="label">
+                    <label>Hide prices</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>15</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled translate="label">
+                            <label>Enable</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enabled>
+                        <customer_groups translate="label comment">
+                            <label>Customer Group</label>
+                            <comment><![CDATA[Select the customer groups you want to show prices for.
+                            Use the CTRL key or Command key (Mac OS) to select multiple values at once.]]></comment>
+                            <frontend_type>multiselect</frontend_type>
+                            <source_model>adminhtml/system_config_source_customer_group_multiselect</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <can_be_empty>1</can_be_empty>
+                            <depends>
+                                <enabled>1</enabled>
+                            </depends>
+                        </customer_groups>
+                    </fields>
+                </hideprices>
+            </groups>
+        </hideprices>
+    </sections>
+</config>

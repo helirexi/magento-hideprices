@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<!--
+ *
+ * Intercastilla Hideprices Extension
+ *
+ * NOTICE OF LICENSE
+ *
+ * Copyright (c) 2014 Intercastilla Diseño y Comunicación Gráfica, S.L.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included i
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OF
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OR
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ *
+-->
+<config>
+    <modules>
+        <Intercastilla_Hideprices>
+            <version>0.2.0</version>
+        </Intercastilla_Hideprices>
+    </modules>
+    <global>
+        <blocks>
+            <hideprices>
+                <class>Intercastilla_Hideprices_Block</class>
+            </hideprices>
+            <catalog>
+                <rewrite>
+                    <layer_view>Intercastilla_Hideprices_Block_Catalog_Layer_View</layer_view>
+                </rewrite>
+            </catalog>
+        </blocks>
+        <events>
+            <catalog_controller_product_init>
+                <observers>
+                    <hideprices_catalog_controller_product_init>
+                        <type>singleton</type>
+                        <class>hideprices/observer_product</class>
+                        <method>catalogControllerProductInit</method>
+                    </hideprices_catalog_controller_product_init>
+                </observers>
+            </catalog_controller_product_init>
+            <catalog_product_collection_load_after>
+                <observers>
+                    <hideprices_catalog_product_collection_load_after>
+                        <type>singleton</type>
+                        <class>hideprices/observer_product</class>
+                        <method>productCollectionLoadAfter</method>
+                    </hideprices_catalog_product_collection_load_after>
+                </observers>
+            </catalog_product_collection_load_after>
+            <catalog_product_is_salable_after>
+                <observers>
+                    <hideprices_catalog_product_is_salable_after>
+                        <type>singleton</type>
+                        <class>hideprices/observer_product</class>
+                        <method>catalogProductIsSalableAfter</method>
+                    </hideprices_catalog_product_is_salable_after>
+                </observers>
+            </catalog_product_is_salable_after>
+        </events>
+        <helpers>
+            <hideprices>
+                <class>Intercastilla_Hideprices_Helper</class>
+            </hideprices>
+        </helpers>
+        <models>
+            <hideprices>
+                <class>Intercastilla_Hideprices_Model</class>
+            </hideprices>
+        </models>
+    </global>
+    <adminhtml>
+        <translate>
+            <modules>
+                <Intercastilla_Hideprices>
+                    <files>
+                        <default>Intercastilla_Hideprices.csv</default>
+                    </files>
+                </Intercastilla_Hideprices>
+            </modules>
+        </translate>
+    </adminhtml>
+</config>
