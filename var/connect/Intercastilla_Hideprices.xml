@@ -1,0 +1,85 @@
+<_>
+   <form_key>pZJBhi9IZg2cN5Ex</form_key>
+   <name>Intercastilla_Hideprices</name>
+   <channel>community</channel>
+   <version_ids>
+      <version_ids>2</version_ids>
+   </version_ids>
+   <summary>This extension allows you to hide prices for not logged-in or selected customer groups</summary>
+   <description>This extension allows you to hide prices for not logged-in and/or selected customer groups. It also removes the &quot;add to cart&quot; button</description>
+   <license>MIT</license>
+   <license_uri>http://opensource.org/licenses/MIT</license_uri>
+   <version>0.2.0</version>
+   <stability>stable</stability>
+   <notes>Initial release</notes>
+   <authors>
+      <name>
+         <name>Intercastilla Team</name>
+      </name>
+      <user>
+         <user>comercial</user>
+      </user>
+      <email>
+         <email>comercial@intercastilla.com</email>
+      </email>
+   </authors>
+   <depends_php_min>5.2.0</depends_php_min>
+   <depends_php_max>6.0.0</depends_php_max>
+   <depends>
+      <package>
+         <name>
+            <name/>
+         </name>
+         <channel>
+            <channel/>
+         </channel>
+         <min>
+            <min/>
+         </min>
+         <max>
+            <max/>
+         </max>
+         <files>
+            <files>  </files>
+         </files>
+      </package>
+      <extension>
+         <name>
+            <name>Core</name>
+         </name>
+         <min>
+            <min/>
+         </min>
+         <max>
+            <max/>
+         </max>
+      </extension>
+   </depends>
+   <contents>
+      <target>
+         <target>magelocal</target>
+         <target>magecommunity</target>
+         <target>mageetc</target>
+      </target>
+      <path>
+         <path/>
+         <path>Intercastilla/Hideprices</path>
+         <path>modules/Intercastilla_Hideprices.xml</path>
+      </path>
+      <type>
+         <type>file</type>
+         <type>dir</type>
+         <type>file</type>
+      </type>
+      <include>
+         <include/>
+         <include/>
+         <include/>
+      </include>
+      <ignore>
+         <ignore/>
+         <ignore/>
+         <ignore/>
+      </ignore>
+   </contents>
+</_>

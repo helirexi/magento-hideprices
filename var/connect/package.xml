@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Intercastilla_Hideprices</name>
+    <version>0.2.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/MIT">MIT</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>This extension allows you to hide prices for not logged-in or selected customer groups</summary>
+    <description>This extension allows you to hide prices for not logged-in and/or selected customer groups. It also removes the "add to cart" button</description>
+    <notes>Initial release</notes>
+    <authors><author><name>Intercastilla Team</name><user>comercial</user><email>comercial@intercastilla.com</email></author></authors>
+    <date>2014-11-25</date>
+    <time>17:20:30</time>
+    <contents><target name="magecommunity"><dir name="Intercastilla"><dir name="Hideprices"><dir name="Block"><dir name="Catalog"><dir name="Layer"><file name="View.php" hash="c8ecac387f7f7b7f0a35514bc54359e4"/></dir><file name=".DS_Store" hash="10a64f59410242bae6275897e348f9e7"/></dir></dir><dir name="Helper"><file name="Client.php" hash="41377241b7fe9c86f371770857b38687"/><file name="Data.php" hash="90282798fc83bbd0ccce48795c222c8a"/></dir><dir name="Model"><dir name="Observer"><file name="Product.php" hash="5500f62457e5c1eb260f21836b242f3d"/></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="f18cd6f993a22a72cfebd1369ebfb616"/><file name="config.xml" hash="fc0c34dcef964a07f1731b23cb07d916"/><file name="system.xml" hash="e0fde8f15b0bd19fc92130675da30829"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Intercastilla_Hideprices.xml" hash="6b12ed5c100c4878f1c066b830e58d68"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

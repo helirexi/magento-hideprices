@@ -1,3 +1,4 @@
 # intercastilla hideprices modman file
 app/code/community/Intercastilla/Hideprices	app/code/community/Intercastilla/Hideprices
 app/etc/modules/Intercastilla_Hideprices.xml 	app/etc/modules/Intercastilla_Hideprices.xml
+var/connect/package.xml				var/connect/Intercastilla_Hideprices.package.xml
